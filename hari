@@ -1,0 +1,76 @@
+#hi this is harish
+#Git :is a distribution version control system(docs)
+#Version control system: it is used to track the changes of sourcecode/project.
+#in a project they is a couple of team members working on a set of application. So, they might be 5 to 8 develops (or) 3 developers in that case with the help of version control we can track the changes of our code/project.
+#We have 2 types of version control systems;                                                 
+1.distributed VCS:                       eg; git                                                        
+2.centralized VCS:                       eg:svn
+Centralized Version Control System (CVCS) and Distributed Version Control System (DVCS) are two approaches to managing and tracking changes in software development projects.
+*In a Centralized Version Control System, a single, central repository stores the entire history and current version of the project. Developers check out files from this central repository to make changes, and changes are committed back to the same location. This system relies heavily on a network connection to the central server, and if the server goes down, it can impede the ability of developers to collaborate and make changes. Additionally, the central repository acts as a single point of failure – if it is compromised or lost, the entire history of the project could be jeopardized.
+
+#On the other hand, a Distributed Version Control System operates with a more decentralized approach. Each developer has a complete copy of the entire project, including its history, on their local machine. This means that developers can work independently and make changes locally without relying on a constant network connection to a central server. Collaboration occurs through exchanging changes between repositories, allowing developers to work offline and reducing the risk associated with a central server failure. Popular DVCS tools include Git and Mercurial.
+#
+#GitHub: is a central repository/source code management tool to store the     
+               source code. 
+Other tools gitlab
+            Gitbucket
+GitHub is a web-based platform for version control and collaborative software development. It uses Git as the underlying system to manage source code versions, enabling developers to track changes, manage branches, and collaborate efficiently on projects. Key features include:
+Repositories: Storage for project files and history.
+Branches: Facilitate parallel development and experimentation.
+Pull Requests: Allow developers to propose changes and review code before merging.
+Issues & Discussions: Help manage bugs, tasks, and community interactions.
+Actions & CI/CD: Automate workflows like testing and deployment.
+GitHub supports both public and private projects, fostering open-source contributions and enterprise-level collaboration.
+Here is a list of commonly used Git commands, categorised for convenience:
+       To generate ssh-keygen & cat/pad location
+
+1. Configuration git config --global user.name "Your Name" –  
+Set your Git username.git config --global user.email "your.email@example.com" – 
+Set your Git email.git config --list – View all Git configurations.
+
+2. Repository Management
+git init – Initialise a new Git repository.
+git clone <repository_url> – Clone a remote repository to your local machine.
+git remote -v – Show the remote repositories linked to your project.
+
+3. Staging and Committing
+git status – Check the status of files (staged, unstaged, untracked).
+git add <file> – Add a specific file to the staging area.
+git add . – Add all changes to the staging area.
+git commit -m "Commit message" – Commit changes with a message.
+git commit -am "Commit message" – Add and commit tracked files in one step.
+
+4. Branching and Merging
+git branch – List all branches.
+git branch <branch_name> – Create a new branch.
+git checkout <branch_name> – Switch to a branch.
+git checkout -b <branch_name> – Create and switch to a new branch.
+git merge <branch_name> – Merge the specified branch into the current branch.
+git branch -d <branch_name> – Delete a branch.
+
+5. Viewing History
+git log – View commit history.
+git log --oneline – View a concise commit history.
+git diff – Show changes between working directory and last commit.
+git diff --staged – Show changes in the staging area.
+
+6. Remote Operations
+git fetch – Fetch changes from the remote without merging.
+git pull – Fetch and merge changes from the remote repository.
+git push – Push local commits to the remote repository.
+git push -u origin <branch_name> – Push a branch to the remote and track it.
+
+7. Undoing Changes
+git reset <file> – Unstage a file.
+git checkout -- <file> – Discard changes in the working directory.
+git revert <commit_id> – Revert a specific commit.
+git reset --hard <commit_id> – Reset repository to a specific commit and discard changes.
+
+8. Advanced Commands
+git stash – Save changes temporarily without committing.
+git stash pop – Reapply stashed changes.
+git rebase <branch> – Reapply commits on top of another branch.
+git cherry-pick <commit_id> – Apply a specific commit from another branch.
+
+These commands form the core of daily Git usage for managing projects efficiently.
+
